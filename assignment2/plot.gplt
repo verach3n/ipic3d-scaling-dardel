@@ -1,8 +1,8 @@
 set terminal png size 8192,4096 enhanced font "Helvetica,72"
 set autoscale
-set output 'task21.png'
+set output 'stream-runtime.png'
 set xlabel 'Threads'
-set ylabel 'Average Runtime (10e-4 s)'
+set ylabel 'Average Runtime (1e-3 s)'
 set xtics ('1' 1, '32' 2, '64' 3, '128' 4)
 set style fill solid 0.5 border -1
 plot for [i=1:4] 'data11' using (i):i with boxplot notitle
