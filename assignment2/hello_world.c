@@ -6,7 +6,12 @@ int main (int argc, char *argv[]) {
         #pragma omp parallel
         {
                 int id = omp_get_thread_num();
-                printf("Hello world %d of %d\n", id, 4);
+                printf("Hello world from thread %d\n", id);
+                if (id == 0)
+                {
+                        int num = omp_get_num_threads();
+                        printf("Total number of threads: %d\n", num);
+                }
         }
         return 0;
 }
