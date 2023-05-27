@@ -1,3 +1,4 @@
+
 Number of processes = 128
 -------------------------
 Number of threads = 1
@@ -26,7 +27,7 @@ Number of cells (y)      = 64
 Number of cells (z)      = 64
 Time step                = 0.15
 Number of cycles         = 100
-Results saved in  : data
+Results saved in  : data128
 Case type         : GEM
 Simulation name   : testGEM3D
 Poisson correction: no
@@ -667,7 +668,7 @@ GMRES converged at restart # 0; iteration #8 with error: 0.000750808
 
 
 *** SIMULATION ENDED SUCESSFULLY ***
- Simulation Time: 79.6902 sec (0.0221362 hours)
+ Simulation Time: 78.9745 sec (0.0219374 hours)
 ***
 
 
@@ -683,17 +684,17 @@ Number of PEs (MPI ranks):    128
 Numbers of PEs per Node:      128
 Numbers of Threads per PE:      1
 Number of Cores per Socket:    64
-Execution start time:  Sat May 27 03:08:07 2023
-System name and speed:  nid001310  3.365 GHz (nominal)
+Execution start time:  Sun May 28 00:11:27 2023
+System name and speed:  nid001386  3.315 GHz (nominal)
 AMD   Rome                 CPU  Family: 23  Model: 49  Stepping:  0
 Core Performance Boost:  All 128 PEs have CPB capability
 
 
 
-Avg Process Time:      80.00 secs              
-High Memory:        25,399.0 MiBytes     198.4 MiBytes per PE
-I/O Read Rate:      5.961878 MiBytes/sec       
-I/O Write Rate:   133.037306 MiBytes/sec       
+Avg Process Time:      79.33 secs              
+High Memory:        25,369.3 MiBytes     198.2 MiBytes per PE
+I/O Read Rate:      0.804035 MiBytes/sec       
+I/O Write Rate:   845.580008 MiBytes/sec       
 
 Notes for table 1:
 
@@ -707,26 +708,26 @@ Table 1:  Profile by Function
         |         |  Samp | Samp% |  Function=[MAX10]
         |         |       |       |   PE=HIDE
        
- 100.0% | 7,867.1 |    -- |    -- | Total
+ 100.0% | 7,801.8 |    -- |    -- | Total
 |----------------------------------------------------------------------
-|  84.2% | 6,623.4 |    -- |    -- | USER
+|  84.0% | 6,556.5 |    -- |    -- | USER
 ||---------------------------------------------------------------------
-||  41.0% | 3,222.7 | 142.3 |  4.3% | Particles3D::mover_PC_AoS
-||  18.5% | 1,451.5 |  52.5 |  3.5% | EMfields3D::sumMoments_AoS
-||   2.8% |   216.6 |  58.4 | 21.4% | Grid3DCU::get_safe_cell_and_weights
-||   2.3% |   184.4 |  37.6 | 17.1% | get_field_components_for_cell
-||   1.5% |   119.7 |  22.3 | 15.8% | EMfields3D::MUdot
-||   1.4% |   107.7 |  26.3 | 19.8% | iPic3D::const_array_ref3<>::getidx
+||  40.8% | 3,180.4 | 205.6 |  6.1% | Particles3D::mover_PC_AoS
+||  18.5% | 1,440.4 |  49.6 |  3.4% | EMfields3D::sumMoments_AoS
+||   2.8% |   216.9 |  38.1 | 15.1% | Grid3DCU::get_safe_cell_and_weights
+||   2.3% |   182.7 |  37.3 | 17.1% | get_field_components_for_cell
+||   1.5% |   119.2 |  34.8 | 22.7% | EMfields3D::MUdot
+||   1.4% |   108.2 |  23.8 | 18.1% | iPic3D::const_array_ref3<>::getidx
 ||=====================================================================
-|   9.9% |   777.6 |    -- |    -- | MPI
+|  10.0% |   777.9 |    -- |    -- | MPI
 ||---------------------------------------------------------------------
-||   3.0% |   236.1 | 170.9 | 42.3% | MPI_Waitany
-||   2.4% |   191.7 |  70.3 | 27.1% | MPI_Waitall
-||   1.6% |   129.8 |  63.2 | 33.0% | MPI_Allreduce
+||   3.4% |   268.7 | 207.3 | 43.9% | MPI_Waitany
+||   2.6% |   205.4 |  85.6 | 29.6% | MPI_Waitall
+||   1.8% |   136.8 |  81.2 | 37.5% | MPI_Allreduce
 ||=====================================================================
-|   5.9% |   462.7 |    -- |    -- | ETC
+|   6.0% |   464.4 |    -- |    -- | ETC
 ||---------------------------------------------------------------------
-||   5.5% |   430.3 |  40.7 |  8.7% | __cray_memcpy_ROME
+||   5.5% |   430.4 |  42.6 |  9.1% | __cray_memcpy_ROME
 |======================================================================
 
 Notes for table 2:
@@ -743,45 +744,45 @@ Table 2:  Profile by Group, Function, and Line
         |         |       |       |    Line
         |         |       |       |     PE=HIDE
        
- 100.0% | 7,867.1 |    -- |    -- | Total
+ 100.0% | 7,801.8 |    -- |    -- | Total
 |---------------------------------------------------------------------------
-|  84.2% | 6,623.4 |    -- |    -- | USER
+|  84.0% | 6,556.5 |    -- |    -- | USER
 ||--------------------------------------------------------------------------
-||  41.0% | 3,222.7 |    -- |    -- | Particles3D::mover_PC_AoS
+||  40.8% | 3,180.4 |    -- |    -- | Particles3D::mover_PC_AoS
 3|        |         |       |       |  Private/iPIC3D/particles/Particles3D.cpp
 ||||------------------------------------------------------------------------
-4|||   1.5% |   117.6 |  34.4 | 22.8% | line.687
-4|||   4.6% |   365.4 |  51.6 | 12.5% | line.711
-4|||   8.8% |   689.5 |  64.5 |  8.6% | line.725
-4|||  17.6% | 1,383.6 |  78.4 |  5.4% | line.727
-4|||   1.4% |   106.3 |  26.7 | 20.3% | line.736
-4|||   1.1% |    89.7 |  34.3 | 27.9% | line.753
+4|||   1.5% |   114.9 |  26.1 | 18.6% | line.687
+4|||   4.6% |   359.9 |  58.1 | 14.0% | line.711
+4|||   8.7% |   677.0 |  72.0 |  9.7% | line.725
+4|||  17.5% | 1,364.2 | 118.8 |  8.1% | line.727
+4|||   1.4% |   106.1 |  26.9 | 20.4% | line.736
+4|||   1.1% |    89.3 |  25.7 | 22.5% | line.753
 ||||========================================================================
-||  18.5% | 1,451.5 |    -- |    -- | EMfields3D::sumMoments_AoS
+||  18.5% | 1,440.4 |    -- |    -- | EMfields3D::sumMoments_AoS
 3|        |         |       |       |  Private/iPIC3D/fields/EMfields3D.cpp
 ||||------------------------------------------------------------------------
-4|||   5.3% |   414.6 |  52.4 | 11.3% | line.944
-4|||   7.0% |   551.5 |  46.5 |  7.8% | line.946
+4|||   5.2% |   407.2 |  51.8 | 11.4% | line.944
+4|||   7.1% |   552.0 |  43.0 |  7.3% | line.946
 ||||========================================================================
-||   2.8% |   216.6 |    -- |    -- | Grid3DCU::get_safe_cell_and_weights
+||   2.8% |   216.9 |    -- |    -- | Grid3DCU::get_safe_cell_and_weights
 3|        |         |       |       |  Private/iPIC3D/include/Grid3DCU.h
-||   2.3% |   184.4 |    -- |    -- | get_field_components_for_cell
+||   2.3% |   182.7 |    -- |    -- | get_field_components_for_cell
 3|        |         |       |       |  Private/iPIC3D/include/EMfields3D.h
-||   1.5% |   119.7 |    -- |    -- | EMfields3D::MUdot
+||   1.5% |   119.2 |    -- |    -- | EMfields3D::MUdot
 3|        |         |       |       |  Private/iPIC3D/fields/EMfields3D.cpp
-||   1.4% |   107.7 |  26.3 | 19.8% | iPic3D::const_array_ref3<>::getidx
+||   1.4% |   108.2 |  23.8 | 18.1% | iPic3D::const_array_ref3<>::getidx
 3|        |         |       |       |  Private/iPIC3D/include/Alloc.h
 4|        |         |       |       |   line.642
 ||==========================================================================
-|   9.9% |   777.6 |    -- |    -- | MPI
+|  10.0% |   777.9 |    -- |    -- | MPI
 ||--------------------------------------------------------------------------
-||   3.0% |   236.1 | 170.9 | 42.3% | MPI_Waitany
-||   2.4% |   191.7 |  70.3 | 27.1% | MPI_Waitall
-||   1.6% |   129.8 |  63.2 | 33.0% | MPI_Allreduce
+||   3.4% |   268.7 | 207.3 | 43.9% | MPI_Waitany
+||   2.6% |   205.4 |  85.6 | 29.6% | MPI_Waitall
+||   1.8% |   136.8 |  81.2 | 37.5% | MPI_Allreduce
 ||==========================================================================
-|   5.9% |   462.7 |    -- |    -- | ETC
+|   6.0% |   464.4 |    -- |    -- | ETC
 ||--------------------------------------------------------------------------
-||   5.5% |   430.3 |  40.7 |  8.7% | __cray_memcpy_ROME
+||   5.5% |   430.4 |  42.6 |  9.1% | __cray_memcpy_ROME
 |===========================================================================
 
 Observation:  MPI utilization
@@ -804,14 +805,14 @@ Table 3:  Memory Bandwidth by Numanode
           |   GBytes |   GBytes |           |   / Sec | Nominal | 
           |          |          |           |         |    Peak | 
 |---------------------------------------------------------------------------
-|   400.01 |   359.18 |    40.83 | 79.935245 |    5.00 |    2.4% | numanode.0
-|   398.11 |   358.12 |    39.99 | 79.934782 |    4.98 |    2.4% | numanode.1
-|   399.21 |   358.21 |    40.99 | 79.933648 |    4.99 |    2.4% | numanode.2
-|   396.18 |   356.64 |    39.54 | 79.933744 |    4.96 |    2.4% | numanode.3
-|   397.59 |   357.22 |    40.37 | 79.933766 |    4.97 |    2.4% | numanode.4
-|   401.11 |   358.67 |    42.44 | 79.934856 |    5.02 |    2.5% | numanode.5
-|   397.11 |   356.97 |    40.15 | 79.933360 |    4.97 |    2.4% | numanode.6
-|   398.07 |   357.69 |    40.38 | 79.933528 |    4.98 |    2.4% | numanode.7
+|   398.24 |   357.56 |    40.68 | 79.270455 |    5.02 |    2.5% | numanode.0
+|   396.95 |   357.37 |    39.58 | 79.271344 |    5.01 |    2.4% | numanode.1
+|   397.30 |   357.81 |    39.50 | 79.272321 |    5.01 |    2.4% | numanode.2
+|   394.54 |   355.76 |    38.78 | 79.270960 |    4.98 |    2.4% | numanode.3
+|   398.07 |   357.86 |    40.21 | 79.270438 |    5.02 |    2.5% | numanode.4
+|   400.17 |   358.39 |    41.78 | 79.267402 |    5.05 |    2.5% | numanode.5
+|   396.72 |   357.48 |    39.24 | 79.269524 |    5.00 |    2.4% | numanode.6
+|   397.67 |   357.80 |    39.87 | 79.270247 |    5.02 |    2.4% | numanode.7
 |===========================================================================
 
 Notes for table 4:
@@ -828,7 +829,7 @@ Table 4:  Program energy and power usage (from Cray PM)
  Energy |    Power |      Time | 
     (J) |      (W) |           | 
 ----------------------------------------
- 46,105 |  576.324 | 79.998406 | Total
+ 44,485 |  560.743 | 79.332295 | Total
 ========================================
 
 Notes for table 5:
@@ -847,7 +848,7 @@ Table 5:  File Input Stats by Filename
      Rank |   Reader |             |  Ranks | Reader |          | 
           |     Rank |             |        |   Rank |          | 
 |-----------------------------------------------------------------------------
-| 0.000762 | 0.004542 |    5.961878 |    128 |    2.0 | 2,381.50 | ../inputfiles/testGEM3Dsmall.inp
+| 0.005653 | 0.004545 |    0.804035 |    128 |    2.0 | 2,383.00 | ../inputfiles/testGEM3Dsmall_128.inp
 |=============================================================================
 
 Notes for table 6:
@@ -860,60 +861,60 @@ Notes for table 6:
 
 Table 6:  File Output Stats by Filename
 
-      Avg |      Avg |  Write Rate | Number |    Avg |     Bytes/ | File Name=!x/^/(proc|sys)/
-    Write |    Write | MiBytes/sec |     of | Writes |       Call |  PE=HIDE
- Time per |  MiBytes |             | Writer |    per |            | 
-   Writer |      per |             |  Ranks | Writer |            | 
-     Rank |   Writer |             |        |   Rank |            | 
-          |     Rank |             |        |        |            | 
+      Avg |      Avg |   Write Rate | Number |     Avg |     Bytes/ | File Name=!x/^/(proc|sys)/
+    Write |    Write |  MiBytes/sec |     of |  Writes |       Call |  PE=HIDE
+ Time per |  MiBytes |              | Writer |     per |            | 
+   Writer |      per |              |  Ranks |  Writer |            | 
+     Rank |   Writer |              |        |    Rank |            | 
+          |     Rank |              |        |         |            | 
 |-----------------------------------------------------------------------------
-| 0.026842 | 1.000212 |   37.262830 |      1 |    3.0 | 349,599.33 | data/testGEM3D_PXYe0_50.vtk
-| 0.023895 | 1.000207 |   41.859285 |      1 |    3.0 | 349,597.67 | data/testGEM3D_PZZi3_50.vtk
-| 0.023750 | 1.000212 |   42.114812 |      1 |    3.0 | 349,599.33 | data/testGEM3D_PXZe0_50.vtk
-| 0.021514 | 1.000207 |   46.490639 |      1 |    3.0 | 349,597.67 | data/testGEM3D_PXYi1_0.vtk
-| 0.021422 | 1.000207 |   46.691661 |      1 |    3.0 | 349,597.67 | data/testGEM3D_PXXi3_0.vtk
-| 0.020684 | 1.000207 |   48.357540 |      1 |    3.0 | 349,597.67 | data/testGEM3D_PXXi1_0.vtk
-| 0.020596 | 1.000207 |   48.562050 |      1 |    3.0 | 349,597.67 | data/testGEM3D_PZZi1_50.vtk
-| 0.018985 | 1.000207 |   52.684208 |      1 |    3.0 | 349,597.67 | data/testGEM3D_PYZi1_0.vtk
-| 0.018179 | 1.000202 |   55.020029 |      1 |    3.0 | 349,596.00 | data/testGEM3D_rhoi3_50.vtk
-| 0.017904 | 1.000212 |   55.864283 |      1 |    3.0 | 349,599.33 | data/testGEM3D_PXZe0_0.vtk
-| 0.017093 | 3.000179 |  175.517821 |      1 |    5.0 | 629,183.20 | data/testGEM3D_Ji_0.vtk
-| 0.016547 | 1.000207 |   60.448249 |      1 |    3.0 | 349,597.67 | data/testGEM3D_PXYi1_50.vtk
-| 0.016078 | 1.000212 |   62.210059 |      1 |    3.0 | 349,599.33 | data/testGEM3D_PZZe2_0.vtk
-| 0.015100 | 1.000212 |   66.239735 |      1 |    3.0 | 349,599.33 | data/testGEM3D_PYYe0_50.vtk
-| 0.014686 | 1.000212 |   68.104696 |      1 |    3.0 | 349,599.33 | data/testGEM3D_PXXe0_0.vtk
+| 0.002814 | 3.000180 | 1,066.334551 |      1 |     5.0 | 629,183.40 | data128/testGEM3D_B_50.vtk
+| 0.002776 | 0.023367 |     8.416084 |      1 | 1,131.0 |      21.66 | stdout
+| 0.002756 | 3.000180 | 1,088.704586 |      1 |     5.0 | 629,183.40 | data128/testGEM3D_B_0.vtk
+| 0.002693 | 3.000181 | 1,114.246940 |      1 |     5.0 | 629,183.60 | data128/testGEM3D_E_0.vtk
+| 0.002652 | 3.000184 | 1,131.086828 |      1 |     5.0 | 629,184.20 | data128/testGEM3D_Je_50.vtk
+| 0.002645 | 3.000179 | 1,134.242976 |      1 |     5.0 | 629,183.20 | data128/testGEM3D_Ji_0.vtk
+| 0.002607 | 3.000179 | 1,150.607999 |      1 |     5.0 | 629,183.20 | data128/testGEM3D_Ji_50.vtk
+| 0.002556 | 3.000181 | 1,173.565851 |      1 |     5.0 | 629,183.60 | data128/testGEM3D_E_50.vtk
+| 0.002545 | 3.000184 | 1,178.717618 |      1 |     5.0 | 629,184.20 | data128/testGEM3D_Je_0.vtk
+| 0.001427 | 1.000212 |   701.100997 |      1 |     3.0 | 349,599.33 | data128/testGEM3D_PYZe0_0.vtk
+| 0.001420 | 1.000207 |   704.511496 |      1 |     3.0 | 349,597.67 | data128/testGEM3D_PZZi3_0.vtk
+| 0.001390 | 1.000202 |   719.331343 |      1 |     3.0 | 349,596.00 | data128/testGEM3D_rhoi3_0.vtk
+| 0.001358 | 1.000212 |   736.538351 |      1 |     3.0 | 349,599.33 | data128/testGEM3D_PZZe0_50.vtk
+| 0.001338 | 1.000207 |   747.548881 |      1 |     3.0 | 349,597.67 | data128/testGEM3D_PXZi3_50.vtk
+| 0.001337 | 1.000207 |   748.064371 |      1 |     3.0 | 349,597.67 | data128/testGEM3D_PXZi1_0.vtk
 |=============================================================================
 
 Table 7:  Lustre File Information
 
   10 of 67 files shown.
 
-                        File Path |    Stripe | Stripe | Stripe | OST list
-                                  |      size | offset |  count | 
---------------------------------------------------------------------------
- ../inputfiles/testGEM3Dsmall.inp | 1,048,576 |      0 |      1 | 29
-          data/SimulationData.txt | 1,048,576 |      0 |      1 | 35
-     data/ConservedQuantities.txt | 1,048,576 |      0 |      1 | 40
-           data/testGEM3D_B_0.vtk | 1,048,576 |      0 |      1 | 20
-           data/testGEM3D_E_0.vtk | 1,048,576 |      0 |      1 | 24
-          data/testGEM3D_Je_0.vtk | 1,048,576 |      0 |      1 | 26
-          data/testGEM3D_Ji_0.vtk | 1,048,576 |      0 |      1 | 30
-       data/testGEM3D_rhoe0_0.vtk | 1,048,576 |      0 |      1 | 44
-       data/testGEM3D_rhoi1_0.vtk | 1,048,576 |      0 |      1 | 47
-       data/testGEM3D_rhoe2_0.vtk | 1,048,576 |      0 |      1 | 32
-==========================================================================
+                            File Path |    Stripe | Stripe | Stripe | OST list
+                                      |      size | offset |  count | 
+------------------------------------------------------------------------------
+ ../inputfiles/testGEM3Dsmall_128.inp | 1,048,576 |      0 |      1 | 26
+           data128/SimulationData.txt | 1,048,576 |      0 |      1 | 35
+      data128/ConservedQuantities.txt | 1,048,576 |      0 |      1 | 40
+            data128/testGEM3D_B_0.vtk | 1,048,576 |      0 |      1 | 22
+            data128/testGEM3D_E_0.vtk | 1,048,576 |      0 |      1 | 26
+           data128/testGEM3D_Je_0.vtk | 1,048,576 |      0 |      1 | 30
+           data128/testGEM3D_Ji_0.vtk | 1,048,576 |      0 |      1 | 44
+        data128/testGEM3D_rhoe0_0.vtk | 1,048,576 |      0 |      1 | 42
+        data128/testGEM3D_rhoi1_0.vtk | 1,048,576 |      0 |      1 | 32
+        data128/testGEM3D_rhoe2_0.vtk | 1,048,576 |      0 |      1 | 36
+==============================================================================
 Program invocation:
-  /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/./iPIC3D ../inputfiles/testGEM3Dsmall.inp
+  /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/./iPIC3D ../inputfiles/testGEM3Dsmall_128.inp
 
 For a complete report with expanded tables and notes, run:
-  pat_report /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+74822-8605049s
+  pat_report /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+171408-8605286s
 
 For help identifying callers of particular functions:
-  pat_report -O callers+src /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+74822-8605049s
+  pat_report -O callers+src /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+171408-8605286s
 To see the entire call tree:
-  pat_report -O calltree+src /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+74822-8605049s
+  pat_report -O calltree+src /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+171408-8605286s
 
 For interactive, graphical performance analysis, run:
-  app2 /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+74822-8605049s
+  app2 /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+171408-8605286s
 
 ================  End of CrayPat-lite output  ==========================
