@@ -7,4 +7,4 @@
 #SBATCH --ntasks-per-node=128
 #SBATCH --nodes=2
 #SBATCH -e error_file_256.e
-srun ./iPIC3D ../inputfiles/testGEM3Dsmall_256.inp > 256.out
+srun -n 256 ./iPIC3D ../inputfiles/testGEM3Dsmall_256.inp > 256.out
