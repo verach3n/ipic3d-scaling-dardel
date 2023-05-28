@@ -7,4 +7,4 @@
 #SBATCH --ntasks-per-node=128
 #SBATCH --nodes=4
 #SBATCH -e error_file_512_notrack.e
-srun ./iPIC3D ../inputfiles/testGEM3Dsmall_512_notrack.inp > 512_notrack.out
+srun -n 512 ./iPIC3D ../inputfiles/testGEM3Dsmall_512_notrack.inp > 512_notrack.out
