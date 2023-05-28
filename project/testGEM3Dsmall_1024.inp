@@ -57,9 +57,6 @@ PERIODICX = 1
 PERIODICY = 0
 PERIODICZ = 1
 
-# mover
-NiterMover = 3   # number of predictor-corrector iterations for electrons
-
 # %%%%%%%%%%%%%% PARTICLES %%%%%%%%%%%%%%%%%
 #    ns = number of species
 #    0 = electrons
@@ -75,7 +72,7 @@ rhoINIT = 1.0 1.0 0.1 0.1
 rhoINJECT = 0.0 0.0 0.0 0.0
 
 # TrackParticleID[species] = 1=true, 0=false --> Assign ID to particles
-TrackParticleID= 1 1 1 1
+TrackParticleID= 0 0 0 0
 # npcelx = number of particles per cell - Direction X
 npcelx = 4 4 4 4
 # npcely = number of particles per cell - Direction Y */
@@ -143,12 +140,12 @@ bcPHIfaceZleft  = 1
 # mover predictor corrector iteration
    NiterMover  = 3
 # Output for field
-   FieldOutputCycle = 50
+   FieldOutputCycle = 200
    FieldOutputTag   = B+E+Je+Ji
    MomentsOutputTag = rho+PXX+PXY+PXZ+PYY+PYZ+PZZ
 # Output for particles if 0 it doesnt save particles data
    ParticlesOutputCycle = 0
    ParticlesOutputTag = position+velocity+q
 # restart cycle
-   RestartOutputCycle = 3000
+   RestartOutputCycle = 0
    CallFinalize=1
