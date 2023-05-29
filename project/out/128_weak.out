@@ -1,0 +1,884 @@
+
+Number of processes = 128
+-------------------------
+Number of threads = 1
+-------------------------
+
+Virtual Cartesian Processors Topology
+-------------------------------------
+Processors grid: 8x4x4
+Periodicity X: 1
+Periodicity Y: 0
+Periodicity Z: 1
+
+
+Simulation Parameters
+---------------------
+Number of species    = 4
+qom[0] = -64
+qom[1] = 1
+qom[2] = -64
+qom[3] = 1
+x-Length                 = 10
+y-Length                 = 10
+z-Length                 = 10
+Number of cells (x)      = 8
+Number of cells (y)      = 8
+Number of cells (z)      = 8
+Time step                = 0.15
+Number of cycles         = 100
+Results saved in  : data128_weak
+Case type         : GEM
+Simulation name   : testGEM3D
+Poisson correction: no
+---------------------
+Check Simulation Constraints
+---------------------
+Accuracy Constraint:  
+u_th < dx/dt species 0.....OK
+v_th < dy/dt species 0......OK
+u_th < dx/dt species 1.....OK
+v_th < dy/dt species 1......OK
+u_th < dx/dt species 2.....OK
+v_th < dy/dt species 2......OK
+u_th < dx/dt species 3.....OK
+v_th < dy/dt species 3......OK
+
+Finite Grid Stability Constraint:  
+WARNING. u_th*dt/dx (species 0) = 0.0054 < .1
+WARNING. v_th*dt/dy (species 0) = 0.0054 < .1
+WARNING. u_th*dt/dx (species 1) = 0.001512 < .1
+WARNING. v_th*dt/dy (species 1) = 0.001512 < .1
+WARNING. u_th*dt/dx (species 2) = 0.0054 < .1
+WARNING. v_th*dt/dy (species 2) = 0.0054 < .1
+WARNING. u_th*dt/dx (species 3) = 0.001512 < .1
+WARNING. v_th*dt/dy (species 3) = 0.001512 < .1
+------------------------------------------
+Initialize GEM Challenge with Perturbation
+------------------------------------------
+B0x                              = 0.0195
+B0y                              = 0
+B0z                              = 0
+Delta (current sheet thickness) = 0.5
+rho species 0 = 1 DRIFTING 
+rho species 1 = 1 DRIFTING 
+rho species 2 = 0.1 BACKGROUND 
+rho species 3 = 0.1 BACKGROUND 
+-------------------------
+ ======= Cycle 0 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0515007 norm b vector (source) = 0.0515003
+GMRES converged at restart # 0; iteration #3 with error: 0.000198699
+*** B CALCULATION ***
+ ======= Cycle 1 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.049107 norm b vector (source) = 0.0554192
+GMRES converged at restart # 0; iteration #3 with error: 0.000308356
+*** B CALCULATION ***
+ ======= Cycle 2 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0482931 norm b vector (source) = 0.0555573
+GMRES converged at restart # 0; iteration #3 with error: 0.000426422
+*** B CALCULATION ***
+ ======= Cycle 3 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0476828 norm b vector (source) = 0.054577
+GMRES converged at restart # 0; iteration #3 with error: 0.000454841
+*** B CALCULATION ***
+ ======= Cycle 4 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0467148 norm b vector (source) = 0.0532576
+GMRES converged at restart # 0; iteration #3 with error: 0.000445625
+*** B CALCULATION ***
+ ======= Cycle 5 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0451715 norm b vector (source) = 0.05198
+GMRES converged at restart # 0; iteration #3 with error: 0.000439008
+*** B CALCULATION ***
+ ======= Cycle 6 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0431915 norm b vector (source) = 0.0507434
+GMRES converged at restart # 0; iteration #3 with error: 0.00044419
+*** B CALCULATION ***
+ ======= Cycle 7 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0411125 norm b vector (source) = 0.0494028
+GMRES converged at restart # 0; iteration #3 with error: 0.000453096
+*** B CALCULATION ***
+ ======= Cycle 8 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0392415 norm b vector (source) = 0.0479319
+GMRES converged at restart # 0; iteration #3 with error: 0.000457431
+*** B CALCULATION ***
+ ======= Cycle 9 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0377235 norm b vector (source) = 0.0464503
+GMRES converged at restart # 0; iteration #3 with error: 0.000456728
+*** B CALCULATION ***
+ ======= Cycle 10 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0365459 norm b vector (source) = 0.0450808
+GMRES converged at restart # 0; iteration #3 with error: 0.000453882
+*** B CALCULATION ***
+ ======= Cycle 11 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0356141 norm b vector (source) = 0.0438434
+GMRES converged at restart # 0; iteration #3 with error: 0.000449681
+*** B CALCULATION ***
+ ======= Cycle 12 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0348159 norm b vector (source) = 0.0426933
+GMRES converged at restart # 0; iteration #3 with error: 0.000448072
+*** B CALCULATION ***
+ ======= Cycle 13 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0340434 norm b vector (source) = 0.041588
+GMRES converged at restart # 0; iteration #3 with error: 0.000447407
+*** B CALCULATION ***
+ ======= Cycle 14 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0332187 norm b vector (source) = 0.040519
+GMRES converged at restart # 0; iteration #3 with error: 0.000447372
+*** B CALCULATION ***
+ ======= Cycle 15 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0323134 norm b vector (source) = 0.0394889
+GMRES converged at restart # 0; iteration #3 with error: 0.000447569
+*** B CALCULATION ***
+ ======= Cycle 16 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0313516 norm b vector (source) = 0.0384933
+GMRES converged at restart # 0; iteration #3 with error: 0.000450653
+*** B CALCULATION ***
+ ======= Cycle 17 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0303906 norm b vector (source) = 0.0375287
+GMRES converged at restart # 0; iteration #3 with error: 0.000460372
+*** B CALCULATION ***
+ ======= Cycle 18 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0294905 norm b vector (source) = 0.0366103
+GMRES converged at restart # 0; iteration #3 with error: 0.000481291
+*** B CALCULATION ***
+ ======= Cycle 19 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0286863 norm b vector (source) = 0.0357632
+GMRES converged at restart # 0; iteration #3 with error: 0.000510933
+*** B CALCULATION ***
+ ======= Cycle 20 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0279834 norm b vector (source) = 0.0350072
+GMRES converged at restart # 0; iteration #3 with error: 0.000545172
+*** B CALCULATION ***
+ ======= Cycle 21 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0273637 norm b vector (source) = 0.0343419
+GMRES converged at restart # 0; iteration #3 with error: 0.000579299
+*** B CALCULATION ***
+ ======= Cycle 22 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0267973 norm b vector (source) = 0.0337464
+GMRES converged at restart # 0; iteration #3 with error: 0.000611262
+*** B CALCULATION ***
+ ======= Cycle 23 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0262519 norm b vector (source) = 0.0331871
+GMRES converged at restart # 0; iteration #3 with error: 0.000638944
+*** B CALCULATION ***
+ ======= Cycle 24 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0257017 norm b vector (source) = 0.0326297
+GMRES converged at restart # 0; iteration #3 with error: 0.000661951
+*** B CALCULATION ***
+ ======= Cycle 25 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0251318 norm b vector (source) = 0.0320477
+GMRES converged at restart # 0; iteration #3 with error: 0.000680374
+*** B CALCULATION ***
+ ======= Cycle 26 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0245391 norm b vector (source) = 0.0314247
+GMRES converged at restart # 0; iteration #3 with error: 0.000695119
+*** B CALCULATION ***
+ ======= Cycle 27 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0239287 norm b vector (source) = 0.0307523
+GMRES converged at restart # 0; iteration #3 with error: 0.000705523
+*** B CALCULATION ***
+ ======= Cycle 28 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0233144 norm b vector (source) = 0.0300408
+GMRES converged at restart # 0; iteration #3 with error: 0.000718234
+*** B CALCULATION ***
+ ======= Cycle 29 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0227065 norm b vector (source) = 0.0293053
+GMRES converged at restart # 0; iteration #3 with error: 0.000731499
+*** B CALCULATION ***
+ ======= Cycle 30 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0221135 norm b vector (source) = 0.0285651
+GMRES converged at restart # 0; iteration #3 with error: 0.000746455
+*** B CALCULATION ***
+ ======= Cycle 31 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0215395 norm b vector (source) = 0.0278376
+GMRES converged at restart # 0; iteration #3 with error: 0.000761742
+*** B CALCULATION ***
+ ======= Cycle 32 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0209855 norm b vector (source) = 0.0271381
+GMRES converged at restart # 0; iteration #3 with error: 0.000778536
+*** B CALCULATION ***
+ ======= Cycle 33 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0204497 norm b vector (source) = 0.0264762
+GMRES converged at restart # 0; iteration #3 with error: 0.000795677
+*** B CALCULATION ***
+ ======= Cycle 34 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0199301 norm b vector (source) = 0.0258559
+GMRES converged at restart # 0; iteration #3 with error: 0.000811204
+*** B CALCULATION ***
+ ======= Cycle 35 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0194259 norm b vector (source) = 0.0252798
+GMRES converged at restart # 0; iteration #3 with error: 0.000826096
+*** B CALCULATION ***
+ ======= Cycle 36 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0189364 norm b vector (source) = 0.0247467
+GMRES converged at restart # 0; iteration #3 with error: 0.000837826
+*** B CALCULATION ***
+ ======= Cycle 37 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0184614 norm b vector (source) = 0.0242494
+GMRES converged at restart # 0; iteration #3 with error: 0.000841178
+*** B CALCULATION ***
+ ======= Cycle 38 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0180047 norm b vector (source) = 0.0237867
+GMRES converged at restart # 0; iteration #3 with error: 0.000842808
+*** B CALCULATION ***
+ ======= Cycle 39 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0175682 norm b vector (source) = 0.0233589
+GMRES converged at restart # 0; iteration #3 with error: 0.00084267
+*** B CALCULATION ***
+ ======= Cycle 40 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0171524 norm b vector (source) = 0.0229629
+GMRES converged at restart # 0; iteration #3 with error: 0.000839017
+*** B CALCULATION ***
+ ======= Cycle 41 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0167572 norm b vector (source) = 0.0225933
+GMRES converged at restart # 0; iteration #3 with error: 0.000831376
+*** B CALCULATION ***
+ ======= Cycle 42 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0163809 norm b vector (source) = 0.0222391
+GMRES converged at restart # 0; iteration #3 with error: 0.000816847
+*** B CALCULATION ***
+ ======= Cycle 43 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0160264 norm b vector (source) = 0.0219011
+GMRES converged at restart # 0; iteration #3 with error: 0.000806557
+*** B CALCULATION ***
+ ======= Cycle 44 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0156919 norm b vector (source) = 0.0215809
+GMRES converged at restart # 0; iteration #3 with error: 0.000799438
+*** B CALCULATION ***
+ ======= Cycle 45 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0153762 norm b vector (source) = 0.0212781
+GMRES converged at restart # 0; iteration #3 with error: 0.000794909
+*** B CALCULATION ***
+ ======= Cycle 46 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0150798 norm b vector (source) = 0.0209975
+GMRES converged at restart # 0; iteration #3 with error: 0.000795022
+*** B CALCULATION ***
+ ======= Cycle 47 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0148007 norm b vector (source) = 0.0207384
+GMRES converged at restart # 0; iteration #3 with error: 0.000795539
+*** B CALCULATION ***
+ ======= Cycle 48 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0145398 norm b vector (source) = 0.0205052
+GMRES converged at restart # 0; iteration #3 with error: 0.000801307
+*** B CALCULATION ***
+ ======= Cycle 49 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0142938 norm b vector (source) = 0.0202946
+GMRES converged at restart # 0; iteration #3 with error: 0.000808615
+*** B CALCULATION ***
+ ======= Cycle 50 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0140608 norm b vector (source) = 0.020102
+GMRES converged at restart # 0; iteration #3 with error: 0.000817578
+*** B CALCULATION ***
+ ======= Cycle 51 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0138376 norm b vector (source) = 0.0199209
+GMRES converged at restart # 0; iteration #3 with error: 0.000827503
+*** B CALCULATION ***
+ ======= Cycle 52 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0136199 norm b vector (source) = 0.0197412
+GMRES converged at restart # 0; iteration #3 with error: 0.000837121
+*** B CALCULATION ***
+ ======= Cycle 53 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0134053 norm b vector (source) = 0.0195553
+GMRES converged at restart # 0; iteration #3 with error: 0.000847818
+*** B CALCULATION ***
+ ======= Cycle 54 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0131903 norm b vector (source) = 0.0193567
+GMRES converged at restart # 0; iteration #3 with error: 0.000859778
+*** B CALCULATION ***
+ ======= Cycle 55 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0129718 norm b vector (source) = 0.0191374
+GMRES converged at restart # 0; iteration #3 with error: 0.000870914
+*** B CALCULATION ***
+ ======= Cycle 56 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0127482 norm b vector (source) = 0.0188917
+GMRES converged at restart # 0; iteration #3 with error: 0.0008812
+*** B CALCULATION ***
+ ======= Cycle 57 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0125187 norm b vector (source) = 0.0186168
+GMRES converged at restart # 0; iteration #3 with error: 0.000890938
+*** B CALCULATION ***
+ ======= Cycle 58 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0122833 norm b vector (source) = 0.0183149
+GMRES converged at restart # 0; iteration #3 with error: 0.000901649
+*** B CALCULATION ***
+ ======= Cycle 59 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0120443 norm b vector (source) = 0.017997
+GMRES converged at restart # 0; iteration #3 with error: 0.000917233
+*** B CALCULATION ***
+ ======= Cycle 60 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0118007 norm b vector (source) = 0.0176704
+GMRES converged at restart # 0; iteration #3 with error: 0.000933801
+*** B CALCULATION ***
+ ======= Cycle 61 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0115533 norm b vector (source) = 0.0173407
+GMRES converged at restart # 0; iteration #3 with error: 0.00095161
+*** B CALCULATION ***
+ ======= Cycle 62 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0113023 norm b vector (source) = 0.0170107
+GMRES converged at restart # 0; iteration #3 with error: 0.00096664
+*** B CALCULATION ***
+ ======= Cycle 63 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0110484 norm b vector (source) = 0.0166815
+GMRES converged at restart # 0; iteration #3 with error: 0.000978807
+*** B CALCULATION ***
+ ======= Cycle 64 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0107959 norm b vector (source) = 0.0163642
+GMRES converged at restart # 0; iteration #3 with error: 0.000996133
+*** B CALCULATION ***
+ ======= Cycle 65 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0105432 norm b vector (source) = 0.0160619
+GMRES converged at restart # 0; iteration #4 with error: 0.000114104
+*** B CALCULATION ***
+ ======= Cycle 66 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0102915 norm b vector (source) = 0.0157774
+GMRES converged at restart # 0; iteration #4 with error: 0.000115434
+*** B CALCULATION ***
+ ======= Cycle 67 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0100421 norm b vector (source) = 0.0155104
+GMRES converged at restart # 0; iteration #4 with error: 0.000116143
+*** B CALCULATION ***
+ ======= Cycle 68 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00979364 norm b vector (source) = 0.0152538
+GMRES converged at restart # 0; iteration #4 with error: 0.00011585
+*** B CALCULATION ***
+ ======= Cycle 69 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00955215 norm b vector (source) = 0.0150139
+GMRES converged at restart # 0; iteration #4 with error: 0.000115086
+*** B CALCULATION ***
+ ======= Cycle 70 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00931951 norm b vector (source) = 0.0148004
+GMRES converged at restart # 0; iteration #4 with error: 0.000113876
+*** B CALCULATION ***
+ ======= Cycle 71 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.009094 norm b vector (source) = 0.014613
+GMRES converged at restart # 0; iteration #4 with error: 0.000111909
+*** B CALCULATION ***
+ ======= Cycle 72 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00887781 norm b vector (source) = 0.0144486
+GMRES converged at restart # 0; iteration #3 with error: 0.000997037
+*** B CALCULATION ***
+ ======= Cycle 73 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00867707 norm b vector (source) = 0.0143179
+GMRES converged at restart # 0; iteration #3 with error: 0.000993496
+*** B CALCULATION ***
+ ======= Cycle 74 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00848819 norm b vector (source) = 0.0142193
+GMRES converged at restart # 0; iteration #3 with error: 0.000986184
+*** B CALCULATION ***
+ ======= Cycle 75 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00831157 norm b vector (source) = 0.014146
+GMRES converged at restart # 0; iteration #3 with error: 0.000977191
+*** B CALCULATION ***
+ ======= Cycle 76 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00814733 norm b vector (source) = 0.0140913
+GMRES converged at restart # 0; iteration #3 with error: 0.000968539
+*** B CALCULATION ***
+ ======= Cycle 77 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00799336 norm b vector (source) = 0.0140435
+GMRES converged at restart # 0; iteration #3 with error: 0.000959711
+*** B CALCULATION ***
+ ======= Cycle 78 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00785113 norm b vector (source) = 0.0139992
+GMRES converged at restart # 0; iteration #3 with error: 0.000956867
+*** B CALCULATION ***
+ ======= Cycle 79 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00772215 norm b vector (source) = 0.0139655
+GMRES converged at restart # 0; iteration #3 with error: 0.000959532
+*** B CALCULATION ***
+ ======= Cycle 80 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00760194 norm b vector (source) = 0.0139419
+GMRES converged at restart # 0; iteration #3 with error: 0.000962622
+*** B CALCULATION ***
+ ======= Cycle 81 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00748717 norm b vector (source) = 0.0139182
+GMRES converged at restart # 0; iteration #3 with error: 0.000967449
+*** B CALCULATION ***
+ ======= Cycle 82 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00737999 norm b vector (source) = 0.0138947
+GMRES converged at restart # 0; iteration #3 with error: 0.000973829
+*** B CALCULATION ***
+ ======= Cycle 83 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0072783 norm b vector (source) = 0.0138728
+GMRES converged at restart # 0; iteration #3 with error: 0.000979967
+*** B CALCULATION ***
+ ======= Cycle 84 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00718148 norm b vector (source) = 0.0138595
+GMRES converged at restart # 0; iteration #3 with error: 0.000980762
+*** B CALCULATION ***
+ ======= Cycle 85 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00708568 norm b vector (source) = 0.013852
+GMRES converged at restart # 0; iteration #3 with error: 0.000980849
+*** B CALCULATION ***
+ ======= Cycle 86 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00699062 norm b vector (source) = 0.0138498
+GMRES converged at restart # 0; iteration #3 with error: 0.000979156
+*** B CALCULATION ***
+ ======= Cycle 87 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0068892 norm b vector (source) = 0.0138363
+GMRES converged at restart # 0; iteration #3 with error: 0.000978234
+*** B CALCULATION ***
+ ======= Cycle 88 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00678539 norm b vector (source) = 0.0138084
+GMRES converged at restart # 0; iteration #3 with error: 0.000978221
+*** B CALCULATION ***
+ ======= Cycle 89 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00667644 norm b vector (source) = 0.0137628
+GMRES converged at restart # 0; iteration #3 with error: 0.000977733
+*** B CALCULATION ***
+ ======= Cycle 90 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.0065622 norm b vector (source) = 0.013697
+GMRES converged at restart # 0; iteration #3 with error: 0.000976147
+*** B CALCULATION ***
+ ======= Cycle 91 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00644438 norm b vector (source) = 0.0136127
+GMRES converged at restart # 0; iteration #3 with error: 0.00097694
+*** B CALCULATION ***
+ ======= Cycle 92 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00632337 norm b vector (source) = 0.0135161
+GMRES converged at restart # 0; iteration #3 with error: 0.0009735
+*** B CALCULATION ***
+ ======= Cycle 93 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00620061 norm b vector (source) = 0.0134124
+GMRES converged at restart # 0; iteration #3 with error: 0.000971423
+*** B CALCULATION ***
+ ======= Cycle 94 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00607394 norm b vector (source) = 0.0132967
+GMRES converged at restart # 0; iteration #3 with error: 0.000968877
+*** B CALCULATION ***
+ ======= Cycle 95 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00594707 norm b vector (source) = 0.0131667
+GMRES converged at restart # 0; iteration #3 with error: 0.000971721
+*** B CALCULATION ***
+ ======= Cycle 96 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00582713 norm b vector (source) = 0.0130421
+GMRES converged at restart # 0; iteration #3 with error: 0.00096989
+*** B CALCULATION ***
+ ======= Cycle 97 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00571125 norm b vector (source) = 0.0129308
+GMRES converged at restart # 0; iteration #3 with error: 0.00096797
+*** B CALCULATION ***
+ ======= Cycle 98 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00559715 norm b vector (source) = 0.0128261
+GMRES converged at restart # 0; iteration #3 with error: 0.000963548
+*** B CALCULATION ***
+ ======= Cycle 99 ======= 
+*** E CALCULATION ***
+*** MAXWELL SOLVER ***
+Initial residual: 0.00549155 norm b vector (source) = 0.0127338
+GMRES converged at restart # 0; iteration #3 with error: 0.000958777
+*** B CALCULATION ***
+
+
+*** SIMULATION ENDED SUCESSFULLY ***
+ Simulation Time: 1.07041 sec (0.000297337 hours)
+***
+
+
+#################################################################
+#                                                               #
+#            CrayPat-lite Performance Statistics                #
+#                                                               #
+#################################################################
+
+CrayPat/X:  Version 22.06.0 Revision 4b5ab6256  05/21/22 02:03:49
+Experiment:                  lite  lite-samples
+Number of PEs (MPI ranks):    128
+Numbers of PEs per Node:      128
+Numbers of Threads per PE:      1
+Number of Cores per Socket:    64
+Execution start time:  Mon May 29 16:08:45 2023
+System name and speed:  nid002562  3.348 GHz (nominal)
+AMD   Rome                 CPU  Family: 23  Model: 49  Stepping:  0
+Core Performance Boost:  All 128 PEs have CPB capability
+
+
+
+Avg Process Time:      1.23 secs             
+High Memory:       11,354.2 MiBytes     88.7 MiBytes per PE
+I/O Read Rate:     5.866863 MiBytes/sec      
+I/O Write Rate:   19.194809 MiBytes/sec      
+
+Notes for table 1:
+
+  This table shows functions that have significant exclusive sample
+    hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile ...
+
+Table 1:  Profile by Function
+
+  Samp% | Samp | Imb. |  Imb. | Group
+        |      | Samp | Samp% |  Function=[MAX10]
+        |      |      |       |   PE=HIDE
+       
+ 100.0% | 91.9 |   -- |    -- | Total
+|-----------------------------------------------------------------
+|  70.7% | 65.0 |   -- |    -- | MPI
+||----------------------------------------------------------------
+||  32.0% | 29.5 | 21.5 | 42.6% | MPI_Waitall
+||  20.3% | 18.7 | 14.3 | 43.7% | MPI_Isend
+||   5.7% |  5.3 |  5.7 | 52.6% | MPI_Irecv
+||   4.6% |  4.2 |  9.8 | 70.3% | MPI_Allreduce
+||   3.1% |  2.8 |  8.2 | 74.9% | MPI_Waitany
+||   3.0% |  2.7 |  9.3 | 77.8% | MPI_Test
+||   1.1% |  1.0 |  0.0 |  0.0% | MPI_Cancel
+||================================================================
+|  28.5% | 26.2 |   -- |    -- | USER
+||----------------------------------------------------------------
+||   9.3% |  8.5 | 24.5 | 74.8% | EMfields3D::sumMoments_AoS
+||   5.7% |  5.2 | 16.8 | 76.8% | Particles3D::mover_PC_AoS
+||   1.0% |  0.9 |  3.1 | 78.1% | iPic3D::const_array_ref3<>::getidx
+|=================================================================
+
+Notes for table 2:
+
+  This table shows functions, and line numbers within functions, that
+    have significant exclusive sample hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile+src ...
+
+Table 2:  Profile by Group, Function, and Line
+
+  Samp% | Samp | Imb. |  Imb. | Group
+        |      | Samp | Samp% |  Function=[MAX10]
+        |      |      |       |   Source
+        |      |      |       |    Line
+        |      |      |       |     PE=HIDE
+       
+ 100.0% | 91.9 |   -- |    -- | Total
+|-----------------------------------------------------------------------
+|  70.7% | 65.0 |   -- |    -- | MPI
+||----------------------------------------------------------------------
+||  32.0% | 29.5 | 21.5 | 42.6% | MPI_Waitall
+||  20.3% | 18.7 | 14.3 | 43.7% | MPI_Isend
+||   5.7% |  5.3 |  5.7 | 52.6% | MPI_Irecv
+||   4.6% |  4.2 |  9.8 | 70.3% | MPI_Allreduce
+||   3.1% |  2.8 |  8.2 | 74.9% | MPI_Waitany
+||   3.0% |  2.7 |  9.3 | 77.8% | MPI_Test
+||   1.1% |  1.0 |  0.0 |  0.0% | MPI_Cancel
+||======================================================================
+|  28.5% | 26.2 |   -- |    -- | USER
+||----------------------------------------------------------------------
+||   9.3% |  8.5 |   -- |    -- | EMfields3D::sumMoments_AoS
+3|        |      |      |       |  Private/iPIC3D/fields/EMfields3D.cpp
+||||--------------------------------------------------------------------
+4|||   1.5% |  1.4 |  7.6 | 85.0% | line.944
+4|||   5.9% |  5.5 | 17.5 | 76.9% | line.946
+||||====================================================================
+||   5.7% |  5.2 |   -- |    -- | Particles3D::mover_PC_AoS
+3|        |      |      |       |  Private/iPIC3D/particles/Particles3D.cpp
+||||--------------------------------------------------------------------
+4|||   1.2% |  1.1 |  6.9 | 86.9% | line.725
+4|||   2.8% |  2.6 | 10.4 | 80.6% | line.727
+||||====================================================================
+||   1.0% |  0.9 |   -- |    -- | iPic3D::const_array_ref3<>::getidx
+3|        |      |      |       |  Private/iPIC3D/include/Alloc.h
+|=======================================================================
+
+Observation:  MPI utilization
+
+    No suggestions were made because all ranks are on one node.
+
+
+Notes for table 3:
+
+  This table shows memory traffic for numa nodes, taking for each numa
+    node the maximum value across nodes. It also shows the balance in
+    memory traffic by showing the top 3 and bottom 3 node values.
+  For further explanation, use:  pat_report -v -O mem_bw ...
+
+Table 3:  Memory Bandwidth by Numanode
+
+   Memory |     Read |    Write |   Thread |  Memory |  Memory | Numanode
+  Traffic |   Memory |   Memory |     Time | Traffic | Traffic |  PE=HIDE
+   GBytes |  Traffic |  Traffic |          |  GBytes |       / | 
+          |   GBytes |   GBytes |          |   / Sec | Nominal | 
+          |          |          |          |         |    Peak | 
+|--------------------------------------------------------------------------
+|     2.99 |     1.79 |     1.20 | 1.178868 |    2.54 |    1.2% | numanode.0
+|     2.88 |     1.89 |     0.99 | 1.181273 |    2.44 |    1.2% | numanode.1
+|     3.03 |     1.85 |     1.18 | 1.180618 |    2.57 |    1.3% | numanode.2
+|     2.84 |     1.86 |     0.97 | 1.180413 |    2.40 |    1.2% | numanode.3
+|     2.85 |     2.00 |     0.85 | 1.179734 |    2.42 |    1.2% | numanode.4
+|     2.81 |     1.75 |     1.06 | 1.179192 |    2.38 |    1.2% | numanode.5
+|     2.87 |     1.94 |     0.93 | 1.180330 |    2.43 |    1.2% | numanode.6
+|     2.83 |     1.95 |     0.89 | 1.179459 |    2.40 |    1.2% | numanode.7
+|==========================================================================
+
+Notes for table 4:
+
+  This table shows energy and power usage for the nodes with the
+    maximum, mean, and minimum usage, as well as the sum of usage over
+    all nodes.
+    Energy and power for accelerators is also shown, if applicable.
+  For further explanation, use:  pat_report -v -O program_energy ...
+
+Table 4:  Program energy and power usage (from Cray PM)
+
+   Node |     Node |  Process | PE=HIDE
+ Energy |    Power |     Time | 
+    (J) |      (W) |          | 
+---------------------------------------
+    663 |  540.728 | 1.226124 | Total
+=======================================
+
+Notes for table 5:
+
+  This table show the average time and number of bytes read from each
+    input file, taking the average over the number of ranks that read
+    from the file.  It also shows the number of read operations, and
+    average rates.
+  For further explanation, use:  pat_report -v -O read_stats ...
+
+Table 5:  File Input Stats by Filename
+
+ Avg Read | Avg Read |   Read Rate | Number |    Avg |   Bytes/ | File Name=!x/^/(proc|sys)/
+ Time per |  MiBytes | MiBytes/sec |     of |  Reads |     Call |  PE=HIDE
+   Reader |      per |             | Reader |    per |          | 
+     Rank |   Reader |             |  Ranks | Reader |          | 
+          |     Rank |             |        |   Rank |          | 
+|-----------------------------------------------------------------------------
+| 0.000763 | 0.004474 |    5.866863 |    128 |    2.0 | 2,345.50 | ../inputfiles/128weak.inp
+|=============================================================================
+
+Notes for table 6:
+
+  This table show the average time and number of bytes written to each
+    output file, taking the average over the number of ranks that
+    wrote to the file.  It also shows the number of write operations,
+    and average rates.
+  For further explanation, use:  pat_report -v -O write_stats ...
+
+Table 6:  File Output Stats by Filename
+
+      Avg |      Avg |  Write Rate | Number |     Avg | Bytes/ | File Name=!x/^/(proc|sys)/
+    Write |    Write | MiBytes/sec |     of |  Writes |   Call |  PE=HIDE
+ Time per |  MiBytes |             | Writer |     per |        | 
+   Writer |      per |             |  Ranks |  Writer |        | 
+     Rank |   Writer |             |        |    Rank |        | 
+          |     Rank |             |        |         |        | 
+|-----------------------------------------------------------------------------
+| 0.000696 | 0.001056 |    1.517189 |      1 |    41.0 |  27.00 | data128_weak/SimulationData.txt
+| 0.000581 | 0.023451 |   40.370485 |      1 | 1,131.0 |  21.74 | stdout
+|=============================================================================
+
+Table 7:  Lustre File Information
+
+                            File Path |    Stripe | Stripe | Stripe | OST list
+                                      |      size | offset |  count | 
+------------------------------------------------------------------------------
+            ../inputfiles/128weak.inp | 1,048,576 |      0 |      1 | 39
+      data128_weak/SimulationData.txt | 1,048,576 |      0 |      1 | 13
+ data128_weak/ConservedQuantities.txt | 1,048,576 |      0 |      1 | 15
+==============================================================================
+Program invocation:
+  /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/./iPIC3D ../inputfiles/128weak.inp
+
+For a complete report with expanded tables and notes, run:
+  pat_report /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+127572-8643331s
+
+For help identifying callers of particular functions:
+  pat_report -O callers+src /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+127572-8643331s
+To see the entire call tree:
+  pat_report -O calltree+src /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+127572-8643331s
+
+For interactive, graphical performance analysis, run:
+  app2 /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+127572-8643331s
+
+================  End of CrayPat-lite output  ==========================
