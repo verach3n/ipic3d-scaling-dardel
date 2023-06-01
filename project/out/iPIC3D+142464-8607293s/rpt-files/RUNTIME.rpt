@@ -1,0 +1,211 @@
+
+#################################################################
+#                                                               #
+#            CrayPat-lite Performance Statistics                #
+#                                                               #
+#################################################################
+
+CrayPat/X:  Version 22.06.0 Revision 4b5ab6256  05/21/22 02:03:49
+Experiment:                  lite  lite-samples
+Number of PEs (MPI ranks):     64
+Numbers of PEs per Node:       64
+Numbers of Threads per PE:      1
+Number of Cores per Socket:    64
+Execution start time:  Thu Jun  1 10:46:44 2023
+System name and speed:  nid001530  2.579 GHz (nominal)
+AMD   Rome                 CPU  Family: 23  Model: 49  Stepping:  0
+Core Performance Boost:  All 64 PEs have CPB capability
+
+
+
+Avg Process Time:      3.77 secs             
+High Memory:        5,796.9 MiBytes     90.6 MiBytes per PE
+I/O Read Rate:    12.263093 MiBytes/sec      
+I/O Write Rate:   20.107130 MiBytes/sec      
+
+Notes for table 1:
+
+  This table shows functions that have significant exclusive sample
+    hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile ...
+
+Table 1:  Profile by Function
+
+  Samp% |  Samp | Imb. |  Imb. | Group
+        |       | Samp | Samp% |  Function=[MAX10]
+        |       |      |       |   PE=HIDE
+       
+ 100.0% | 352.5 |   -- |    -- | Total
+|-------------------------------------------------------------------
+|  67.8% | 239.2 |   -- |    -- | USER
+||------------------------------------------------------------------
+||  29.4% | 103.7 | 13.3 | 11.5% | Particles3D::mover_PC_AoS
+||  21.2% |  74.6 |  5.4 |  6.8% | EMfields3D::sumMoments_AoS
+||   2.0% |   7.1 |  6.9 | 50.0% | Grid3DCU::get_safe_cell_and_weights
+||   1.4% |   4.8 |  3.2 | 40.7% | get_field_components_for_cell
+||==================================================================
+|  31.3% | 110.3 |   -- |    -- | MPI
+||------------------------------------------------------------------
+||  14.8% |  52.2 | 17.8 | 25.9% | MPI_Waitall
+||   6.7% |  23.8 | 14.2 | 38.1% | MPI_Isend
+||   4.1% |  14.6 | 13.4 | 48.7% | MPI_Waitany
+||   2.8% |   9.9 |  8.1 | 45.9% | MPI_Allreduce
+||   1.5% |   5.1 |  3.9 | 43.6% | MPI_Irecv
+|===================================================================
+
+Notes for table 2:
+
+  This table shows functions, and line numbers within functions, that
+    have significant exclusive sample hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile+src ...
+
+Table 2:  Profile by Group, Function, and Line
+
+  Samp% |  Samp | Imb. |  Imb. | Group
+        |       | Samp | Samp% |  Function=[MAX10]
+        |       |      |       |   Source
+        |       |      |       |    Line
+        |       |      |       |     PE=HIDE
+       
+ 100.0% | 352.5 |   -- |    -- | Total
+|------------------------------------------------------------------------
+|  67.8% | 239.2 |   -- |    -- | USER
+||-----------------------------------------------------------------------
+||  29.4% | 103.7 |   -- |    -- | Particles3D::mover_PC_AoS
+3|        |       |      |       |  Private/iPIC3D/particles/Particles3D.cpp
+||||---------------------------------------------------------------------
+4|||   2.8% |   9.9 |  7.1 | 42.4% | line.711
+4|||   6.2% |  21.9 |  9.1 | 30.0% | line.725
+4|||  15.6% |  55.2 | 14.8 | 21.5% | line.727
+||||=====================================================================
+||  21.2% |  74.6 |   -- |    -- | EMfields3D::sumMoments_AoS
+3|        |       |      |       |  Private/iPIC3D/fields/EMfields3D.cpp
+||||---------------------------------------------------------------------
+4|||   4.4% |  15.5 |  8.5 | 36.1% | line.944
+4|||  13.4% |  47.2 | 10.8 | 18.9% | line.946
+||||=====================================================================
+||   2.0% |   7.1 |   -- |    -- | Grid3DCU::get_safe_cell_and_weights
+3|        |       |      |       |  Private/iPIC3D/include/Grid3DCU.h
+||   1.4% |   4.8 |   -- |    -- | get_field_components_for_cell
+3|        |       |      |       |  Private/iPIC3D/include/EMfields3D.h
+||=======================================================================
+|  31.3% | 110.3 |   -- |    -- | MPI
+||-----------------------------------------------------------------------
+||  14.8% |  52.2 | 17.8 | 25.9% | MPI_Waitall
+||   6.7% |  23.8 | 14.2 | 38.1% | MPI_Isend
+||   4.1% |  14.6 | 13.4 | 48.7% | MPI_Waitany
+||   2.8% |   9.9 |  8.1 | 45.9% | MPI_Allreduce
+||   1.5% |   5.1 |  3.9 | 43.6% | MPI_Irecv
+|========================================================================
+
+Observation:  MPI utilization
+
+    No suggestions were made because all ranks are on one node.
+
+
+Notes for table 3:
+
+  This table shows memory traffic for numa nodes, taking for each numa
+    node the maximum value across nodes. It also shows the balance in
+    memory traffic by showing the top 3 and bottom 3 node values.
+  For further explanation, use:  pat_report -v -O mem_bw ...
+
+Table 3:  Memory Bandwidth by Numanode
+
+   Memory |     Read |    Write |   Thread |  Memory |  Memory | Numanode
+  Traffic |   Memory |   Memory |     Time | Traffic | Traffic |  PE=HIDE
+   GBytes |  Traffic |  Traffic |          |  GBytes |       / | 
+          |   GBytes |   GBytes |          |   / Sec | Nominal | 
+          |          |          |          |         |    Peak | 
+|--------------------------------------------------------------------------
+|     0.79 |     0.59 |     0.20 | 3.739414 |    0.21 |    0.1% | numanode.0
+|     0.99 |     0.77 |     0.22 | 3.739182 |    0.27 |    0.1% | numanode.1
+|     3.82 |     2.95 |     0.87 | 3.728820 |    1.02 |    0.5% | numanode.2
+|     1.00 |     0.76 |     0.25 | 3.738484 |    0.27 |    0.1% | numanode.3
+|     1.26 |     0.97 |     0.28 | 3.738454 |    0.34 |    0.2% | numanode.4
+|     1.17 |     0.91 |     0.25 | 3.737866 |    0.31 |    0.2% | numanode.5
+|     1.02 |     0.75 |     0.27 | 3.737630 |    0.27 |    0.1% | numanode.6
+|     1.09 |     0.85 |     0.24 | 3.737979 |    0.29 |    0.1% | numanode.7
+|==========================================================================
+
+Notes for table 4:
+
+  This table shows energy and power usage for the nodes with the
+    maximum, mean, and minimum usage, as well as the sum of usage over
+    all nodes.
+    Energy and power for accelerators is also shown, if applicable.
+  For further explanation, use:  pat_report -v -O program_energy ...
+
+Table 4:  Program energy and power usage (from Cray PM)
+
+   Node |     Node |  Process | PE=HIDE
+ Energy |    Power |     Time | 
+    (J) |      (W) |          | 
+---------------------------------------
+  1,814 |  480.987 | 3.771414 | Total
+=======================================
+
+Notes for table 5:
+
+  This table show the average time and number of bytes read from each
+    input file, taking the average over the number of ranks that read
+    from the file.  It also shows the number of read operations, and
+    average rates.
+  For further explanation, use:  pat_report -v -O read_stats ...
+
+Table 5:  File Input Stats by Filename
+
+ Avg Read | Avg Read |   Read Rate | Number |    Avg |   Bytes/ | File Name=!x/^/(proc|sys)/
+ Time per |  MiBytes | MiBytes/sec |     of |  Reads |     Call |  PE=HIDE
+   Reader |      per |             | Reader |    per |          | 
+     Rank |   Reader |             |  Ranks | Reader |          | 
+          |     Rank |             |        |   Rank |          | 
+|-----------------------------------------------------------------------------
+| 0.000365 | 0.004476 |   12.263093 |     64 |    2.0 | 2,346.50 | ../inputfiles/64weak.inp
+|=============================================================================
+
+Notes for table 6:
+
+  This table show the average time and number of bytes written to each
+    output file, taking the average over the number of ranks that
+    wrote to the file.  It also shows the number of write operations,
+    and average rates.
+  For further explanation, use:  pat_report -v -O write_stats ...
+
+Table 6:  File Output Stats by Filename
+
+      Avg |      Avg |  Write Rate | Number |     Avg | Bytes/ | File Name=!x/^/(proc|sys)/
+    Write |    Write | MiBytes/sec |     of |  Writes |   Call |  PE=HIDE
+ Time per |  MiBytes |             | Writer |     per |        | 
+   Writer |      per |             |  Ranks |  Writer |        | 
+     Rank |   Writer |             |        |    Rank |        | 
+          |     Rank |             |        |         |        | 
+|-----------------------------------------------------------------------------
+| 0.000636 | 0.001057 |    1.661579 |      1 |    41.0 |  27.02 | data64_weak/SimulationData.txt
+| 0.000585 | 0.023483 |   40.175592 |      1 | 1,131.0 |  21.77 | stdout
+|=============================================================================
+
+Table 7:  Lustre File Information
+
+                           File Path |    Stripe | Stripe | Stripe | OST list
+                                     |      size | offset |  count | 
+-----------------------------------------------------------------------------
+            ../inputfiles/64weak.inp | 1,048,576 |      0 |      1 | 13
+      data64_weak/SimulationData.txt | 1,048,576 |      0 |      1 | 24
+ data64_weak/ConservedQuantities.txt | 1,048,576 |      0 |      1 | 26
+=============================================================================
+Program invocation:
+  /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/./iPIC3D ../inputfiles/64weak.inp
+
+For a complete report with expanded tables and notes, run:
+  pat_report /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+142464-8607293s
+
+For help identifying callers of particular functions:
+  pat_report -O callers+src /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+142464-8607293s
+To see the entire call tree:
+  pat_report -O calltree+src /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+142464-8607293s
+
+For interactive, graphical performance analysis, run:
+  app2 /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+142464-8607293s
+
+================  End of CrayPat-lite output  ==========================

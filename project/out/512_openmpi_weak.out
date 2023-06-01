@@ -668,7 +668,7 @@ GMRES converged at restart # 0; iteration #5 with error: 0.000730195
 
 
 *** SIMULATION ENDED SUCESSFULLY ***
- Simulation Time: 4.58293 sec (0.00127304 hours)
+ Simulation Time: 4.86859 sec (0.00135239 hours)
 ***
 
 3 total processes killed (some possibly by mpirun during cleanup)

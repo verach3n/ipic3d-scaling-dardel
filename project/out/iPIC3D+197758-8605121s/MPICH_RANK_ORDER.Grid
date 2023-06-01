@@ -1,0 +1,22 @@
+# The 'Grid' rank order in this file targets nodes with multi-core
+# processors, based on Sent Msg Total Bytes collected for:
+#
+# Program:      /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+orig
+# Ap2 File:     /cfs/klemming/home/p/perttuj/Private/iPIC3D/build/iPIC3D+197758-8605121s
+# Number PEs:   256
+# Max PEs/Node: 128
+#
+# To use this file, make a copy named MPICH_RANK_ORDER, and set the
+# environment variable MPICH_RANK_REORDER_METHOD to 3 prior to
+# executing the program.
+#
+# The following rank order was generated with the command:
+#
+#   grid_order -R -P -m 256 -n 128 -g 8x8x4 -c 8x4x1 -N 128
+#
+# Option -N does not provide router optimization because the
+# first cell dimension (8) is larger than half the
+# corresponding grid dimension (8).
+#
+0,4,8,12,44,40,36,32,64,68,72,76,108,104,100,96,128,132,136,140,172,168,164,160,192,196,200,204,236,232,228,224,237,233,229,225,193,197,201,205,173,169,165,161,129,133,137,141,109,105,101,97,65,69,73,77,45,41,37,33,1,5,9,13,2,6,10,14,46,42,38,34,66,70,74,78,110,106,102,98,130,134,138,142,174,170,166,162,194,198,202,206,238,234,230,226,239,235,231,227,195,199,203,207,175,171,167,163,131,135,139,143,111,107,103,99,67,71,75,79,47,43,39,35,3,7,11,15
+243,247,251,255,223,219,215,211,179,183,187,191,159,155,151,147,115,119,123,127,95,91,87,83,51,55,59,63,31,27,23,19,30,26,22,18,50,54,58,62,94,90,86,82,114,118,122,126,158,154,150,146,178,182,186,190,222,218,214,210,242,246,250,254,241,245,249,253,221,217,213,209,177,181,185,189,157,153,149,145,113,117,121,125,93,89,85,81,49,53,57,61,29,25,21,17,28,24,20,16,48,52,56,60,92,88,84,80,112,116,120,124,156,152,148,144,176,180,184,188,220,216,212,208,240,244,248,252
